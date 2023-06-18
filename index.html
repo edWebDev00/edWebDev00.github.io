@@ -5,8 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
 <body>
+    <header>
+        <div class="intro">
+            <h3>hi, im</h3>
+            <h1 style="margin-right: 10px;"><a href="#about">ed crosby</a></h1>
+            <h2> a web designer and developer</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><h2><a href="#projects">projects,</a></h2></li>
+                <li><h2><a href="#about">about,</a></h2></li>
+                <li><h2><a href="#form">contact</a></h2></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        
+    </section> 
+    <section id="about" class="about">
+        <h2>I'm a huge fan of Japan</h2>
+        <img id="castle">
+        <img id="temple">
+        <h2>And my hometown Boston</h2>
+        <img>
+        <img>
+    </section>
+    <section class="services">
+        web design 
+    </section>
+    <section id="projects" class="projects">
+        <div class="calculator">
+            <h3>A calculator created with html, css and javascript</h3>
+            <a href="https://edwebdev00.github.io/calculator/"><img src="images/calculator.png"></a>
+        </div>
+        <div class="landing">
+            <h3>A landing page created with html and css</h3>
+            <a href="https://edwebdev00.github.io/landing-page/"><img src="images/landing.png"></a>
+        </div>
+        <div class="admin">
+            <h3>An admin dashboard created with html and css</h3>
+            <a href="https://edwebdev00.github.io/admindashboard/"><img src="images/admin.png"></a>
+        </div>
+        <div class="etch">
+            <h3>An etch-a-sketch created with javascript</h3>
+            <a href="https://edwebdev00.github.io/Etch-a-SKetch/"><img src="images/etch.png"></a>
+        </div>
+    </section>
+    <section class="testimonials"></section>
+    <section class="blog"></section>
+    <section class="contact">
+        <form id ="form" action="#" method="post">
+            <legend>Let's do this!</legend>
+            <div class="listContainer">
+            <ul>
+                <li>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="firstName">
+                </li>
+                <li>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName"  name="lastName">
+                </li>
+                <li>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email"  name="email"  minlength="8">
+                    <span class="error"></span>
+                </li>
+                <li>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" id="phone" name="number" pattern="(\S\d{3}\S\d{3}\S\d{4})" title="Please enter a valid phone number"
+                    >
+                </li>
+                <li>
+                    <label for="password">PASSWORD</label>
+                    <input  type="password" id="password" name="password" maxlength="7">
+                </li>
+                <li>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" maxlength="7">
+                </li>
+            </ul>
+            </div>
+            <button id="button" type="submit">Contact Me!</button>
+        </form>
+    </section>
+    <footer>
+        <div class="social"></div>
+    </footer>
+
     
 </body>
 </html>

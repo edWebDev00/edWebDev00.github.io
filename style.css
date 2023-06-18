@@ -1,0 +1,157 @@
+
+header {
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    justify-content: space-between;
+}
+.intro {
+    display: flex;
+    
+    
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.hero {
+    color: white;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/hero.jpg");
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+}
+nav ul li {
+    margin-right:10px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#castle {
+    height:25vh;
+    width:30vw;
+    background-image: url(images/castle.jpeg);
+    background-position: cover;
+    
+}
+#temple {
+    height:25vh;
+    width:30vw;
+    background-image: url(images/temple.jpeg);
+}
+.projects img {
+    height:15vh;
+    width:10vw;
+    
+}
+
+/* Beginning of form */
+
+form {
+    align-self: center;
+}
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.message,.message2 {
+    font-size: 1.5rem;
+    margin: 1vw 4vw 1vw 4vw;
+    width: 50%;
+    font-weight: bolder;
+}
+.message {
+    margin-top: 6vw;
+}
+.messageContainer {
+    grid-area: 1/2;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #CCC;
+    width: 60vw;
+    height: 100vh;
+}
+form {
+    margin: 0;
+    width: 60vw;
+    border: 1px solid #CCC;
+    
+    
+}
+legend {
+    font-size: 1.5rem;
+    margin: 1vw 1vw 1vw 4vw;
+    width: 50%;
+    font-weight: bolder;
+}
+.listContainer {
+background-color: white;
+padding: 1.3vw 0;
+}
+ form ul {
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+    padding:0;
+    margin: .5vw 4vw 1.5vw 4vw;
+    width:75%;
+    
+}
+form ul li {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    position: relative;
+}
+
+
+
+button {
+      width: 14vw;
+      margin: 1vw 4vw;
+      padding: 1vw 3vw;
+      border-radius: 1rem;
+      font-size:  1.2rem;
+      
+}
+.login {
+  margin: 1vw 4vw;
+  font-size: 1.5rem;
+}
+/*Input start*/
+input {
+    padding: .25vw;
+    width:80%;
+    border: 1px solid #CCC;
+    margin-top: .5vw;
+}
+input:focus {
+    border: 2px solid blue;
+    
+}
+
+
+
+.error {
+    width: 80%;
+    color: red;
+    background-color: aqua;
+}
